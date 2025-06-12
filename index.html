@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Amour Msabah - Culinary Creations</title> <!-- Updated title for browser tab -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            color: #2d3748;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            /* Removed fixed height to allow images to scale proportionally */
+            height: auto; /* Ensures images maintain their aspect ratio */
+            object-fit: contain; /* Changed from 'cover' to 'contain' */
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+        .card-title {
+            font-weight: 600; /* font-semibold */
+            font-size: 1.25rem; /* text-xl */
+            color: #2d3748;
+        }
+        .header-bg {
+            background-image: linear-gradient(to right, #f6ad55, #ed8936);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="header-bg text-white p-6 md:p-8 shadow-md rounded-b-xl mb-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Ahmed Amour Msabah</h1>
+            <p class="text-xl md:text-2xl font-light">Ahmed's Delicious Dishes</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Ahmed's Signature Bakes</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Dish Card: BRIOCHE LOAF -->
+                <div class="card">
+                    <img src="https://i.imgur.com/6bxRIei.jpg" alt="Brioche Loaf" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Brioche Loaf</h3>
+                        <p class="text-gray-600 text-sm">A rich and tender French bread, perfect for any occasion.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: BRUNCH SIGNATER.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/NNMcpDf.jpg" alt="Brunch Signature Dessert" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Brunch Signature Dessert</h3>
+                        <p class="text-gray-600 text-sm">A unique and exquisitely plated dessert, a true brunch highlight.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: BUNS.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/mylcpav.jpg" alt="Buns" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Buns</h3>
+                        <p class="text-gray-600 text-sm">Soft, fluffy, and versatile buns, baked to perfection.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: CHEESE CAKE.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/zvYkHlj.jpg" alt="Cheese Cake" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Cheese Cake</h3>
+                        <p class="text-gray-600 text-sm">Creamy and rich cheesecake, beautifully garnished with fresh berries.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: CHOCOLATE CROISSANT.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/QMnUgh6.jpg" alt="Chocolate Croissant" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Chocolate Croissant</h3>
+                        <p class="text-gray-600 text-sm">Flaky croissant with a rich chocolate filling, a classic indulgence.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: CROISSANT.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/vWvgPon.jpg" alt="Croissant" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Croissant</h3>
+                        <p class="text-gray-600 text-sm">Golden, buttery, and perfectly layered classic croissants.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: DABBLE CHOCOLATE..jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/ALRxNZT.jpg" alt="Dabble Chocolate Dessert" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Dabble Chocolate Dessert</h3>
+                        <p class="text-gray-600 text-sm">An artful chocolate creation, showcasing intricate plating and rich flavors.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: DABBLE CHOCOLATE.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/QHuiTsU.jpg" alt="Dabble Chocolate Cake" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Dabble Chocolate Cake</h3>
+                        <p class="text-gray-600 text-sm">A decadent chocolate cake, dusted with cocoa and fresh strawberries.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: DATE PUDDING..jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/pI0x2eu.jpg" alt="Date Pudding (Plated)" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Date Pudding (Plated)</h3>
+                        <p class="text-gray-600 text-sm">Warm and comforting date pudding, elegantly plated with ice cream and pistachios.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: DATE PUDDING.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/CLTmVqy.jpg" alt="Date Pudding (Individual)" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Date Pudding (Individual)</h3>
+                        <p class="text-gray-600 text-sm">A delightful individual date pudding, garnished with nuts and a drizzle of sauce.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: ECLEAR.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/VHXSeMK.jpg" alt="Eclear-style Dessert" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Eclear-style Dessert</h3>
+                        <p class="text-gray-600 text-sm">A beautifully crafted dessert, reminiscent of an eclair, with meringue and fruit.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: HOTDOGS BUNS .jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/cTnOEob.jpg" alt="Hotdog Buns" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Hotdog Buns</h3>
+                        <p class="text-gray-600 text-sm">Perfectly shaped and baked hotdog buns, ready for delicious fillings.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: JAPANESE PANCAKE.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/b1z8aul.jpg" alt="Japanese Pancake" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Japanese Pancake</h3>
+                        <p class="text-gray-600 text-sm">Fluffy Japanese-style pancakes, adorned with cream and fresh berries.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: KUNAFA BRULRE.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/hcDYl7O.jpg" alt="Kunafa Brulre" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Kunafa Brulre</h3>
+                        <p class="text-gray-600 text-sm">A delightful fusion dessert, combining Kunafa with a brûlée topping.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: MARBLE CAKE.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/CpaduHJ.jpg" alt="Marble Cake" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Marble Cake</h3>
+                        <p class="text-gray-600 text-sm">A classic marble cake, beautifully swirled and baked to perfection.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: MELT ME.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/aIj9C7A.jpg" alt="Melt Me Dessert" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Melt Me Dessert</h3>
+                        <p class="text-gray-600 text-sm">An inviting chocolate dessert, designed to melt in your mouth.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: OMALI.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/GJS10JE.jpg" alt="Omali" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Omali</h3>
+                        <p class="text-gray-600 text-sm">A traditional Egyptian bread pudding, rich with nuts and cream.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: PISTACHIO CROISSANT.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/w8kLvtE.jpg" alt="Pistachio Croissant" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Pistachio Croissant</h3>
+                        <p class="text-gray-600 text-sm">A flaky croissant filled and topped with vibrant pistachio goodness.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: SESAME BAGEL.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/vm21eyV.jpg" alt="Sesame Bagel" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Sesame Bagel</h3>
+                        <p class="text-gray-600 text-sm">Freshly baked bagels generously coated with sesame seeds.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: TEXAS LOAF.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/qjFelCq.jpg" alt="Texas Loaf" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Texas Loaf</h3>
+                        <p class="text-gray-600 text-sm">Hearty and robust Texas-style bread loaf, perfect for sandwiches or toast.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: TIRAMISSU.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/793ycdj.jpg" alt="Tiramissu" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Tiramissu</h3>
+                        <p class="text-gray-600 text-sm">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    </div>
+                </div>
+
+                <!-- Dish Card: VANILLA CHUFFING.jpg -->
+                <div class="card">
+                    <img src="https://i.imgur.com/I5PvhGM.jpg" alt="Vanilla Chuffing" onerror="this.onerror=null;this.src='https://placehold.co/400x200/cccccc/333333?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <h3 class="card-title">Vanilla Chuffing</h3>
+                        <p class="text-gray-600 text-sm">A delicate vanilla pastry, elegantly presented with candied walnuts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-xl mt-8">
+        <p>&copy; 2024 Ahmed Amour Msabah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
